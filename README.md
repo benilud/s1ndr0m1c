@@ -1,13 +1,23 @@
-# AI-Generated Medical Images for Crouzon Syndrome Research
+# AI-Generated Medical Images for Genetic Syndromes Research
 
 ## Overview
 
-This repository contains the computational resources and workflows used in our research publication on AI-generated medical imagery for Crouzon syndrome studies, published in the American Journal of Medical Genetics.
+This repository contains the computational resources and workflows used in our research publication on AI-generated medical imagery for various genetic syndromes, published in the American Journal of Medical Genetics.
 
 ## Repository Contents
 
 - `workflow_s1dr0m1c.json` - ComfyUI workflow configuration for generating medical imagery
-- `crouzon.safetensors` - Trained model weights specific to Crouzon syndrome characteristics
+- `models/` - Directory containing trained model weights for different genetic syndromes:
+  - `apert.safetensors` - Apert syndrome (AS, OMIM #101200)
+  - `charge.safetensors` - CHARGE syndrome (OMIM #214800)
+  - `crouzon.safetensors` - Crouzon-Pfeiffer syndrome (CPS, OMIM #123500 and #101600)
+  - `guion_almeida.safetensors` - Mandibulofacial Dysostosis with Microcephaly (MFDM, OMIM #610536)
+  - `kabuki.safetensors` - Kabuki syndrome (KS, OMIM #147920 and #300867)
+  - `muenke.safetensors` - Muenke syndrome (MS, OMIM #602849)
+  - `nager.safetensors` - Nager Acrofacial Dysostosis (NAFD, OMIM #154400)
+  - `Saerthre_chotzen.safetensors` - Saethre-Chotzen syndrome (SCS, OMIM #101400)
+  - `silver_russel.safetensors` - Silver-Russell syndrome (SRS, OMIM #180860)
+  - `treacher_collins.safetensors` - Treacher Collins syndrome (TCS, OMIM #154500)
 - `pose.png` - Reference pose image for image generation
 - `ComfyUI_00042_.png` - Example output from the AI generation pipeline
 
@@ -21,8 +31,9 @@ This repository contains the computational resources and workflows used in our r
 
 1. Install ComfyUI following the official installation instructions
 2. Load the provided workflow file (`workflow_s1dr0m1c.json`) into ComfyUI
-3. Ensure the model file (`crouzon.safetensors`) is placed in the appropriate models directory
+3. Place the desired syndrome model file from the `models/` directory into ComfyUI's models directory
 4. Use the reference pose image (`pose.png`) as input for consistent generation parameters
+5. Select the appropriate model based on the genetic syndrome you wish to study
 
 ## Citation
 
